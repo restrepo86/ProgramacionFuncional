@@ -20,5 +20,21 @@ class OperationsTest extends FlatSpec {
 
   }
 
+  "the test" should "return true with negative even number" in {
+
+    val number = -8
+    assert(operations.isItEven(number) == true)
+
+  }
+
+  "the test" should "return false with a negative odd number" in {
+
+    val number = -1
+    assert(operations.isItEven(number) == false)
+    
+  }
+
+
+
 
 }
