@@ -31,7 +31,7 @@ class OperationsTest extends FlatSpec {
 
     val number = -1
     assert(operations.isItEven(number) == false)
-    
+
   }
 
 
