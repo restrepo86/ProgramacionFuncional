@@ -16,6 +16,34 @@ for (marcaCarro <- marcasCarros if marcaCarro == "Mazda") println(marcaCarro)
 marcasCarros.foreach(marcaCarro => print(s"La Mejor Marca es ${marcaCarro} "))
 
 
+val iteratorForStocks = stocks.iterator
+while (iteratorForStocks.hasNext) println(iteratorForStocks.next())
+
+val iteratorForMarcasCarros = marcasCarros.iterator
+while (iteratorForMarcasCarros.hasNext) println(iteratorForMarcasCarros.next())
+
+val iteratorForPersonas = personas.iterator
+while (iteratorForPersonas.hasNext) println(iteratorForPersonas.next())
+
+val mesesDelAno = List("Enero", "Febrero", "Marzo", "Abril", "Mayo")
+val iteratorMesesDelAno = mesesDelAno.iterator
+while (iteratorMesesDelAno.hasNext) println(iteratorMesesDelAno.next())
+mesesDelAno.foreach(mesDelAno => println(mesDelAno))
+for (mesDelAno <- mesesDelAno ) println(mesDelAno)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
