@@ -1,6 +1,5 @@
 package co.com.casio.calculadora.ejercicios
 
-import scala.collection.mutable
 
 /**
   * Las listas en scala son inmutables y cada ves que se agrega
@@ -47,7 +46,7 @@ object ColeccionesInmutables extends App {
 
   val stream = Stream (1,2,3,4,5,6)
   print(stream)
-  
+
 
 
 
