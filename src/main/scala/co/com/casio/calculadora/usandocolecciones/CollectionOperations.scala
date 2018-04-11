@@ -43,6 +43,23 @@ object CollectionOperations extends App {
   val takeTop10 = players takeWhile(_.ranking2015.toInt < 11)
   println(s"LOS 10 MEJORES JUGADORES SON: ${takeTop10 foreach println}")
 
+  /**
+    * El take método selecciona los primeros nelementos de la colección
+    * El drop método descarta los primeros nelementos de la colección
+    * El partition método descarta los primeros 'n' elementos de la colección
+    * El slice método selecciona un intervalo de elementos
+    * El span método divide la colección en dos colecciones basadas en el predicado, donde no se preserva el orden de los elementos
+    * El splitAt método divide una colección en una posición determinada
+    */
+
+  /**
+    * Seleccione Jugadores de Alemania que tengan un ranking en el Top 50.
+    */
+  def playersNationalityFrance(players: List[Player]): List[Player] =  players.filter(_.nationality.equals("FRANCIA"))
+
+  playersNationalityFrance(players) foreach println
+
+
 }
 
 case class Player (name: String, nationality: String, age: String, club: String, domesticLeague: String, rawTotal: String, finalScore: String, ranking2016: String, ranking2015: String)
