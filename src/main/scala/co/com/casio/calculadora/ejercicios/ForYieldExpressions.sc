@@ -14,7 +14,7 @@ object ForYieldExpressions extends App {
     if age > 20
   } yield name
 
-  winners.foreach(println)
+  winners foreach println
 
   case class Person(name: String, age: Int, gender: Char)
 }
