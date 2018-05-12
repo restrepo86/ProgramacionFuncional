@@ -51,14 +51,17 @@ object Monad {
             case Some(a) => f(a).value
           }
         }
-
       def defaultTailRecM[A](a: A) = ???
 
       def tailRecM[A, B](a: A)(f: A => OptionT[F, Either[A, B]]): OptionT[F, B] =
         defaultTailRecM(a)(f)
     }
+    try {
+      optionTMonad
+    } catch {
+      case x => F(x)
+      case m => m
+      case _ => F(optionTMonad)
+    }
   }
-
-
-
 }
